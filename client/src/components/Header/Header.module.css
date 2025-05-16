@@ -1,0 +1,263 @@
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background);
+    /* padding: 10px 20px; */
+    color: var(--primary);
+    gap: 0.5rem;
+}
+.logo:hover{
+    outline: 1px solid white; 
+    outline-offset: -1px;
+    cursor: pointer;
+}
+.logo img{
+    width: 120px;
+    padding-top: 10px;
+    object-fit: cover;
+    border: 1px solid var(--background);
+}
+
+.delivery{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 7px;
+}
+.delivery:hover{
+   outline: 1px solid white; 
+    outline-offset: -1px;
+    cursor: pointer;
+}
+.delivery svg{
+    font-size: 20px;
+}
+.delivery p{
+    font-size: 10px;
+    font-weight: 300;
+}
+.delivery span{
+    font-weight: 500;
+}
+.search {
+    display: flex;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 10px;
+    height: 65%;
+    justify-content: space-between;
+    align-items: center;
+}
+.search .option select{
+    width: 70px;
+    padding: 7px;
+    background-color: none;
+    border: none;
+    height: 100%;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    background-color: #f3f3f3;
+    padding: 0.5 0.5rem;
+    font-size: 0.75rem;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+}
+.search .option select:focus{
+    outline: none;
+}
+.search input{
+    background-color: none;
+    width: 45vw;
+    height: 50%;
+    border: none;
+    background:none;
+    padding: 5px 0.5rem;
+    font-size: 1.2rem;
+    border-right: 1px solid #d6d6d6;
+    cursor: text;
+}
+.search input:focus{
+    outline: none;
+    border: none;
+}
+.search input:active{
+    outline: none;
+    border: none;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 0 2px var(--brand); 
+    outline: none; 
+}
+
+
+.search input:focus {
+    outline: none;
+    border: none;
+}
+.search svg{
+    color: var(--background);
+    width: 3vw;
+    padding: 2px 10px;
+    background: none;
+    border: none;
+    height: 100%;
+    font-size: 20px !important;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 1px solid #ddd;
+    cursor: pointer;
+}
+.search .icon{
+    height: 100%;
+}
+.search svg:hover{
+background-color: var(--brand);
+
+}
+.language {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.language:hover{
+    outline: 1px solid white; 
+    outline-offset: -1px;
+    cursor: pointer;
+}
+.language img{
+    width: 40px;
+    height: 20px;
+    object-fit: cover;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+     height: 100%;
+}
+.profile:hover{
+    outline: 1px solid white; 
+    outline-offset: -1px;
+    cursor: pointer;
+}
+.profile svg{
+    font-size: 20px;
+}
+
+.return{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 70px;
+    font-size: 13px;
+    font-weight: 300;
+     padding: 0 5px;
+}
+.return:hover{
+    outline: 1px solid white; 
+    outline-offset: -1px;
+    cursor: pointer;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    padding: 0 5px;
+}
+.cart:hover{
+    outline: 1px solid white; 
+    outline-offset: -1px;
+    cursor: pointer;
+}
+.cart svg{
+    position: relative;
+    font-size: 30px;
+}
+.cart .value{
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    color: var(--brand);
+    right:30%;
+}
+.cart .txt{
+    padding-top: 10px;
+}
+.menu{
+    display: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #232F3E;
+    color: white;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+}
+nav ul li{
+    padding: 7px 10px;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+}
+nav ul li:hover{
+        outline: 1px solid white; 
+        outline-offset: -1px;
+}
+nav svg{
+    font-size: 25px;
+}
+nav svg:hover{
+    outline: 1px solid white; 
+    outline-offset: -1px;
+}
+    @media (max-width:700px){
+            nav ul li{
+                padding: 7px 5px;
+                font-size: 10px;
+                font-weight: 300;
+                cursor: pointer;
+             }
+            .menu{
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+            .menu:hover{
+               outline: 1px solid white; 
+                outline-offset: -1px;
+            }
+            .menu svg{
+                font-size: 30px;
+            }
+            .profile{
+                justify-self: flex-end;
+            }
+
+            .search{
+                    display: none;
+                }
+            .delivery{
+                    display: none;
+                }
+            .return{
+                display: none;
+            }
+            .language{
+                display: none;
+            }
+                    
+        }
